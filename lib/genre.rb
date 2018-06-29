@@ -14,3 +14,12 @@ class Genre
   def new_song(name, artist)
     new_song = Song.new(name, artist, self)
   end
+
+  def songs
+
+  end
+
+  def artists
+
+  end
+end
