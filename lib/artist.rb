@@ -22,8 +22,9 @@ class Artist
   end
 
   def genres
-    puts songs
-    songs.select {|song| puts song.genre}
+    genres = []
+    songs.each {|song| genres << song.genre}
+    genres
   end
 
 end
