@@ -8,3 +8,9 @@ class Genre
 
   def initialize(name)
     @name = name
+    self.all << self
+  end
+
+  def new_song(name, artist)
+    new_song = Song.new(name, artist, self)
+  end
