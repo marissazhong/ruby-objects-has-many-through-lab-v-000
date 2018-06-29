@@ -20,6 +20,8 @@ class Genre
   end
 
   def artists
-    Song.all.select {|artist| song.artist}
+    artists = []
+    songs.each {|song| artists << song.artist}
+    artists
   end
 end
